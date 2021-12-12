@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>Fläche eines Rechtecks</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script>
+			"use strict";
+
+
+
+			function clicked() {
+				let Anzahl = document.getElementById("idAnzahl").value;
+				let Artikel = document.getElementById("idArtikel").value;
+
+				let ausgabe = "Anzahl ist " + Anzahl + " und Artikel Name ist " +Artikel+ " und der Preis ist : " + Bonus(Artikel);
+
+				document.getElementById("idAusgabe").innerHTML = ausgabe;
+			}
+
+
+		function Bonus(Artikel){
+
+						if (Artikel=="Usb ladekabel") { return 19.99}
+						else if (Artikel=="Wlan drucker"){ return "139.99"}
+						else if (Artikel==="Monitore"){ return "149.99"}
+
+			}
+ 					vKosten= vPreis * vMenge;
+
+
+
+ 			  if (vMenge  >50 ) {
+
+ 				0.05
+
+ 			 }
+ 			 else
+ 			 if (vMenge >80) {
+
+ 				0.08
+
+ 			 }
+			 else
+ 			 if (vMenge >100) {
+
+ 				0.1
+ 			 	 }
+
+
+
+
+ 			 vRabattineuro = vKosten * vRabatt;
+ 			 vGesamtpreismitrabatt = vKosten - vRabattineuro;
+
+
+
+
+
+		</script>
+	</head>
+
+	<body>
+		<h1>Flächenberechnung eines Rechteck</h1>
+
+		Artikel anzahl: <input id="idAnzahl" type="text" value="10"> Produktauswahl: <select id="idArtikel">
+																						<option> Usb ladekabel </option>
+																						<option>  Wlan drucker </option>
+																						<option> Monitore</option>
+																						</select>
+
+
+
+		<button onClick="clicked();">Berechne Fläche</button><br /><br />
+		<div id="idAusgabe">Hier kommt beim Klicken auf den Button eine Ausgabe.</div>
+	</body>
+</html>
